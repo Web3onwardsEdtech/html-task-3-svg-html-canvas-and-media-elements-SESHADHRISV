@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Multimedia Website</title>
+</head>
+<body style="text-align: center;">
+    <svg width="100" height="100">
+        <rect x="10" y="10" width="80" height="80" fill="blue" />
+    </svg>
 
+    <canvas id="myCanvas" width="200" height="200" style="border: 1px solid #d3d3d3;"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+        var grd = context.createLinearGradient(0,0,200,0);
+        grd.addColorStop(0,"red");
+        grd.addColorStop(1,"white");
+
+        context.fillStyle = grd;
+        context.fillRect(10, 10, 150, 80);
+    </script>
+    <br>
+    
+    <h1 style="color: goldenrod; background-color: black;">COOLIE DISCO TTTLE THEME</h1>
+    <audio controls>
+        <source src="Medias/music.mp3.mp3" type="audio/mp3">
+    </audio>
+    <br> <br>
+
+    <h1 style="color: goldenrod; background-color: black;">COOLIE DISCO VIDEO - TTTLE THEME</h1>
+    <video width="500" height="400" controls>
+        <source src="Medias/file.mp4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
